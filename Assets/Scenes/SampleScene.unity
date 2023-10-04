@@ -742,6 +742,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f5c91dee85572849931233f5bc88804, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  isDead: 0
   Jump: 300
 --- !u!1 &727396519
 GameObject:
@@ -801,7 +803,7 @@ GameObject:
   - component: {fileID: 826429446}
   - component: {fileID: 826429445}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -821,7 +823,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   queueTime: 2
   obstacle: {fileID: 727396519}
-  height: 3
+  height: 2.5
 --- !u!4 &826429446
 Transform:
   m_ObjectHideFlags: 0
@@ -850,7 +852,7 @@ GameObject:
   - component: {fileID: 1734948888}
   - component: {fileID: 1734948887}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -914,7 +916,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0

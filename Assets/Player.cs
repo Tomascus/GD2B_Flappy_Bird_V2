@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public GameManager gameManager;
+    public bool isDead = false; 
     private Rigidbody2D rb;
     public float Jump;
     // Start is called before the first frame update
@@ -22,5 +24,11 @@ public class Player : MonoBehaviour
             rb.AddForce(new Vector2(rb.velocity.x, Jump));
         }
         
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        isDead = true;
+        gameManager.GameOver();
+       
     }
 }
